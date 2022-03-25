@@ -1,0 +1,174 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Manual html</title>
+</head>
+<body style="background-color:#E5C1FA;">
+	<header>
+		<h1><center>Manual de HTML</center></h1>
+	</header>
+
+	<h2><FONT COLOR="blue">Etiquetas basicas.</FONT></h2> <p>HTML es el el lenguaje en el que se construyen las páginas web. Como vimos en la página anterior, este es un lenguaje de etiquetas. Veremos aquí las etiquetas imprencindibles para crear una página web, así como la estructura que ésta tiene que tener. Veamos por tanto que debemos hacer para crear una página web.</p>
+
+	<p>Toda la página web debe ir encerrada entre las etiquetas</p>
+
+	<p><FONT COLOR="green"><h2>&lt;html> ...... &lt;/html></h2></FONT></p>
+
+    <p>Estas etiquetas delimitan el principio y el final de la página. Dentro de esta etiqueta hay otras dos etiquetas que son imprescindibles. Estas son :</p>
+
+	<p><FONT COLOR="green"><h2>&lt;head> ...... &lt;/head></h2></FONT></p>
+
+	<p><FONT COLOR="green"><h2>&lt;body> ...... &lt;/body></h2></FONT></p>
+
+	<p></p>Estas dos etiquetas deben ir siempre en este orden, y una detrás de otra, y ambas incluidas dentro de la etiqueta &lt;html> ...... &lt;/html>.</p>
+
+	<p>Por lo tanto la Estructura básica de una página es la siguiente:</p>
+
+	<h4>&lt;html><br>
+  	&lt;head><br>
+     ...<br>
+  	&lt;/head><br>
+  	&lt;body><br>
+     ...<br>
+ 	&lt;/body><br>
+	&lt;/html><br></h4>
+	El único elemento visible es la etiqueta<br>
+
+	<FONT COLOR="green"><h2>&lt;title> ...... &lt;/title></h2></FONT>
+	<p>En la etiqueta title escribiremos el título de la página, el cual lo veremos en la pestaña del navegador.</p>
+
+	<p>La etiqueta body significa cuerpo y es la parte visible de la página. aquí incluiremos todo lo qué queramos que se vea en la página, texto, imágenes, sonidos, enlaces, etc. cada uno de estos elementos tiene sus propias etiquetas que indican qué tipo de elemento es y cómo debe visualizarse. Si incluimos texto sin etiquetas, este se visualizará en el modo que tenga el navegador por defecto.</p>
+	<FONT COLOR="green"><h2>Mi primera página</h2></FONT>
+	<style>
+	.pre1{border:1px solid #ccc;padding:10px;margin:12px 0 10px;font-size:0,9em;}
+	</style>
+
+	<pre class="pre1">
+	
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Titulo&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	mi primera página	
+	&lt;/body&gt;	
+	&lt;/html&gt;
+	</pre>
+	<button onclick="location.href='miprimerapagina.html'">Ver resultado</button>
+	<h2><FONT COLOR="blue">Etiquetas de texto.</FONT></h2>
+	<FONT COLOR="green"><h2>&lt;a>&lt;/a></h2></FONT>
+	<p>El elemento &lt;a> representa un vínculo, si el atributo href está presente, y un marcador de posiciñón para un vícnulo en otro caso. Los vínculos son la parte más escencial de HTML y una de las razones principales por las que ha nacido. Éstos permiten a los autores enlazar un trozo de contenido (generalmente texto o imágenes) con un recurso externo, el cual puede ser otro documento, una imagen, o cualquier otro tipo de recurso. El atributo href es el encargado de especificar, mediante un URI, la ubicación del recurso enlazado.</p>
+	<FONT COLOR="green"><h2>Ejemplo</h></h2></FONT>
+	<style>
+	.pre1{border:1px solid #ccc;padding:10px;margin:12px 0 10px;font-size:0,9em;}
+	</style>
+
+	<pre class="pre1">
+	
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Titulo&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;a href="https://www.youtube.com"&gt;Este es un enlace&lt;/a&gt;
+	&lt;/body&gt;	
+	&lt;/html&gt;
+	</pre>
+	<button onclick="location.href='a.html'">Ver resultado</button>
+	<FONT COLOR="green"><h2>&lt;b>&lt;/b></h2></FONT>
+	<p>La etiqueta &lt;b> se utiliza para poner en negrita una parte del texto sin que tenga una importancia especial. Este es un ejemplo de uso de la &lt;b> etiqueta.</p>
+	<pre class="pre1">
+	
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Titulo&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;b>Este es un texto en Negrillas&lt;/b>
+	&lt;/body&gt;	
+	&lt;/html&gt;
+	</pre>
+	<button onclick="location.href='b.html'">Ver resultado</button>
+	<FONT COLOR="green"><h2>Etiqueta &lt;mark&gt; &lt;/mark&gt;</h2></FONT>
+ 	<p>Esta estiqueta nos ayuda a resaltar un texto determinado, su sintaxis es la siguiente:</p>
+ 	<pre class="pre1">
+	<p>El ingeniero y Pencroft, &lt;mark&gt; cada uno armado con un arma de doble barril &lt;/mark&gt;, y Gideon Spilett cargando su rifle, no tenían más que comenzar.</p>
+	<P>El ingeniero y Pencroft, <mark>cada uno armado con un arma de doble barril</mark>, y Gideon Spilett cargando su rifle, no tenían más que comenzar.</P>
+	</pre>
+	
+	<FONT COLOR="green"><h2>Etiqueta &lt;abbr&gt; &lt;/abbr&gt;</h2></FONT>
+	<p>Esta etiqueta nos ayuda a establecer una abrevitura o acronimo de palabras, se puede ver el significado al posar el mouse sobre el y tiene la siguiente sintaxis.</p>
+	<pre class="pre1">
+	<p>La &lt; abbr title="Organización Internacional de Normalización" >ISO &lt; /abbr > es el organismo encargado de promover el desarrollo de normas internacionales de fabricación (tanto de productos como de servicios), comercio y comunicación para todas las ramas industriales.</p>
+	<p>La <abbr title="Organización Internacional de Normalización">ISO</abbr> es el organismo encargado de promover el desarrollo de normas internacionales de fabricación (tanto de productos como de servicios), comercio y comunicación para todas las ramas industriales.</p>
+	</pre>
+
+	<FONT COLOR="green"><h2>&lt;sub&gt; &lt;/sub&gt;</h2></FONT>
+ 	<p>Esta etiqueta nos ayuda a poner un subindice, en este ejemplo nos ayudamos del uso de la etiqueta &lt;var> para declarar una variable y posterior ponerle un subindice con la siguiente sintaxis.</p>
+	<pre class="pre1">
+	<p>Encuentra &lt;var>R&lt;sub>in&lt;/sub>&lt;/var> y &lt;var>R&lt;sub>out&lt;/sub>&lt;/var> del Transistor de unión bipolar.</p>
+ 	<p>Encuentra <var>R<sub>in</sub></var> y <var>R<sub>out</sub></var> del Transistor de unión bipolar.</p>
+	</pre>
+
+	<FONT COLOR="green"><h2>&lt;sup&gt; &lt;/sup&gt;</h2></FONT>
+ 	<p>Esta etiqueta nos ayuda a poner un superindice, en este ejemplo nos ayudamos del uso de la etiqueta &lt;var> para declarar una variable y posterior ponerle un superindice con la siguiente sintaxis.</p>
+	<pre class="pre1">
+	<p>Fórmula &lt;var>E&lt;/var>=&lt;var>m&lt;/var>&lt;var>c&lt;/var>&lt;sup>2&lt;/sup>.</p>
+ 	<p>Fórmula <var>E</var>=<var>m</var><var>c</var><sup>2</sup>.</p>
+	</pre>
+
+	<FONT COLOR="green"><h2>&lt; var &gt; &lt; /var &gt;</h2></FONT>
+ 	<p>Esta etiqueta nos ayuda a representar a una variable, siendo ésta una varibale en una fórmula matemática o un código de computadora, una constante, un parámetro en una función, etc. Su sintaxis es.</p>
+ 	<pre class="pre1">
+ 	<p>...donde &lt; var >a&lt; /var > representa la longitud de la hipotenusa, y &lt; var >b&lt; /var > y &lt; var >c&lt;/var> representan las longitudes de los otros dos lados.</p>
+ 	<p>...donde <var>a</var> representa la longitud de la hipotenusa, y <var>b</var> y <var>c</var> representan las longitudes de los otros dos lados.</p>
+ 	</pre>
+	<FONT COLOR="blue"><h2>Etiquetas de formulario</h2></FONT>
+	<FONT COLOR="green"><h2>&lt; dialog &gt; &lt; /dialog &gt;</h2></FONT>
+	<p>Esta etiqueta permite al usario enviar dialogos para mostrar un mensaje determinado, su sintaxis es:</p><h2></h2>
+	<pre class="pre1">
+	&lt; dialog open &gt;
+	&lt; h2 &gt;¡ATENCIÓN! &lt; /h2 &gt;
+	&lt; p &gt; Se ha producido un problema en la aplicación. &lt; /p &gt;
+	&lt; /dialog &gt;
+	<dialog open>
+	<h2>Este es el Resultado</h2>
+    <h2>¡ATENCIÓN!</h2>
+    <p>Se ha producido un problema en la aplicación.</p>
+	</dialog>
+	</pre><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<FONT COLOR="green"><h2>&lt; label &gt; &lt; /label &gt;</h2></FONT>
+	<p>Esta etiqueta que puede ser asociada a un control de formulario, y que se supone provee una descripción corta para éste. Los navegadores pueden enlazar ambos elementos permitiendo que los usuarios establezcan el enfoque sobre el control al hacer clic en su etiqueta. Tiene al siguiente sintaxis:</p>
+	<pre class="pre1">
+	<p>&lt; label &gt; Nombre de usuario: &lt; input type="text" name="usuario" &gt; &lt; /label &gt;</p>
+ 	<p>&lt; label &gt; Contraseña: &lt; input type="password" name="pass" &gt; &lt; /label &gt;</p>
+ 	<b><p>Este es el resultado:</p></b>
+	<p><label>Nombre de usuario: <input type="text" name="usuario"></label></p>
+ 	<p><label>Contraseña: <input type="password" name="pass"></label></p>	
+	</pre>
+
+	<FONT COLOR="blue"><h2>Etiquetas de Multimedia</h2></FONT>
+	<FONT COLOR="green"><h2>&lt;img></h2></FONT>
+	<p>Esta etiqueta sirve para colocar una imagen. Este tag, a diferencia de la gran mayoría de los tags de html, no necesita un cierre. Va acompañado de diferentes atributos que te vamos a explicar a continuación.</p>
+	<p>"src:" que indica la ruta del archivo.</p>
+	<p>"alt" que describe textualmente la imagen al posicionarse sobre ella.</p>
+	<p>"width" que estable el ancho del imagen</p>
+	<p>"height" que establece la altura de la imagen</p>
+	<pre class="pre1">
+	<p>&lt; img src="C:\Users\USER\Desktop\miimagen.png" alt="perro sacando lengua" width="200" height="200" &gt;</p>
+	<img src="miimagen.png" alt="perro sacando lengua" width="200" height="200">
+	</pre>
+
+	<FONT COLOR="green"><h2>&lt;video&gt; &lt;/video&gt;</h2></FONT>
+  	<p>Esta etiqueta nos ayuda agregar video en nuestra pagina web, necesita parametros como la direccion del video y tambien el ancho y alto del video, su sintaxis es:</p>
+  	<pre class="pre1">
+  	<p>&lt;video src=""C:\Users\USER\Desktop\mivideo.mp4"" width="384" height="288" controls>&lt;/video> </p>
+  	<p><video src="mivideo.mp4" width="384" height="288" controls></video></p>
+  	</pre>
+
+</table>
+</body>
+</head>	
+</html>
